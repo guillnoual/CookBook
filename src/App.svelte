@@ -2,10 +2,12 @@
   import svelteLogo from './assets/svelte.svg'
   import Counter from './lib/Counter.svelte'
   import Recette from './lib/Recette.svelte'
+  import Ajout from './lib/Ajout.svelte'
   import item from './data/cuisine.json'
   import fruitLogo from './assets/fruit.png'
 
  let hasData = item.length>0;
+
 </script>
 <header>
   <h1>
@@ -32,6 +34,9 @@
   <div>
 
 
+  </div>
+  <div class="card">
+    <Ajout answer={item} />
   </div>
   <div class="card">
     <Counter />
